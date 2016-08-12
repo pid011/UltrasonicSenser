@@ -12,8 +12,8 @@ namespace SenserTest
         private GpioPin triggerPin;
         private GpioPin echoPin;
 
-        private int PIN_ECHO = 18; // Gpio 18
-        private int PIN_TRIG = 23; // Gpio 23
+        private const int PIN_ECHO = 18; // Gpio 18
+        private const int PIN_TRIG = 23; // Gpio 23
 
         public static Senser Distance { get; } = new Senser();
 
