@@ -54,8 +54,8 @@ namespace SenserTest
             stopwatch.Stop();
 
             TimeSpan timeBetween = stopwatch.Elapsed;
-            Debug.WriteLine(timeBetween.ToString());
             double distance = timeBetween.TotalSeconds * 17000;
+            Debug.WriteLine($"Current distance: {distance}cm");
 
             return Math.Round(distance);
         }
